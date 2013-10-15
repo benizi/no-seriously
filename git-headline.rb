@@ -125,7 +125,7 @@ end
 
 # alter the number of commits per pixel to work around some caching issues
 def n_commits(date)
-  20 # back to normal?
+  30
 end
 
 # create commits for each needed date
