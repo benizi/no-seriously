@@ -116,9 +116,9 @@ M 100644 #{file_mark} yay_a_file.txt
 COMMIT
 end
 
-# create ten commits, each a minute apart
-def make_commits(date)
-  10.times do |n|
+# create some number of commits, each a minute apart
+def make_commits(date, commits = 20)
+  commits.times do |n|
     puts fast_export_commit(noon(date) + n * 60)
   end
 end
