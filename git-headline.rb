@@ -123,10 +123,15 @@ def make_commits(date, commits = 20)
   end
 end
 
+# alter the number of commits per pixel to work around some caching issues
+def n_commits(date)
+  date < Date.civil(2013, 4, 7) ? 50 : 20
+end
+
 # create commits for each needed date
 def fast_export
   commit_dates.each do |date|
-    make_commits(date)
+    make_commits(date, n_commits(date))
   end
 end
 
