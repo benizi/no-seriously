@@ -1,6 +1,6 @@
 # No, Seriously
 
-I'm looking for work.
+I'm looking for work in or near Pittsburgh, PA, USA.
 
 ## Credentials
 
@@ -28,7 +28,13 @@ Git has a wonderful tool called [fast-import](https://www.kernel.org/pub/softwar
 which is designed to import a repository from an external source.
 The [fast-import input format](https://www.kernel.org/pub/software/scm/git/docs/git-fast-import.html#_input_format)
 is well-documented and easy to create.  I'd used it in the past to import from
-both CVS (Gentoo) and Mercurial (Vim) repositories.
+CVS (Gentoo) and Mercurial (Vim) repositories. (Now I use git-hg for Vim work.)
 
 [git-headline.rb](git-headline.rb) simply creates a series of commits with the
-right metadata and imports them using `git fast-import`.
+right metadata which can be imported using `git fast-import`.
+
+Full steps:
+
+```sh
+EMAIL={desired-email-for-commits} ruby git-headline.rb | git fast-import
+```
