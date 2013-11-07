@@ -35,6 +35,8 @@ right metadata which can be imported using `git fast-import`.
 
 Full steps:
 
+First: ensure there's at least one commit on the branch you're modifying.
+
 ```sh
 EMAIL={desired-email-for-commits} ruby git-headline.rb | git fast-import
 ```
