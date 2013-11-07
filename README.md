@@ -22,6 +22,11 @@ thinner.
 I never saw the original execution (intentionally, at this point), so maybe I'm
 just a copycat, but I figured I'd try it anyway.
 
+## Updates
+
+Unfortunately, the only way to consistently clear the cached chart is to delete
+the repository containing the commits you don't want listed.
+
 ## How does it work?
 
 Git has a wonderful tool called [fast-import](https://www.kernel.org/pub/software/scm/git/docs/git-fast-import.html),
