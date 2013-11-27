@@ -1,3 +1,7 @@
+# Not right now
+
+As of 2013-11-26, I'm not currently looking for a job.
+
 # No, Seriously
 
 I'm looking for work in or near Pittsburgh, PA, USA.
